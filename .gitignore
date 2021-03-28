@@ -1,3 +1,4 @@
 doc/
 *.csv
 .DS_Store
+secrets*
