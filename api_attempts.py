@@ -125,6 +125,7 @@ with open("cached_time_series.json", "w") as fobj:
 
 # Testing Financial Data API --------------------------------------------------
 symbol = "AAPL"
+
 baseurl = f"https://api.polygon.io/v1/meta/symbols/{symbol}/news"
 params = {"perpage": "10",
           "page": "1",
