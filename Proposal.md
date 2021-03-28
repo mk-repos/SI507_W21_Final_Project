@@ -15,7 +15,7 @@ The number of records retrieved was kept small, but it can be easily expanded in
 
 If a non-US foreign citizen trades stocks in the US, they must calculate the gain/loss in their home currency and report it to the tax authorities in their home country. This is an extremely tedious task, because in addition to the stock prices on the dates of acquisition/sale, the exchange rates on the dates of acquisition/sale must be taken into account going back one year in the past.
 
-This program automatically performs this calculation based on the transaction history of US brokerages uploaded by the user, and also displays useful information such as historical price changes and latest news.
+This program automatically performs this calculation based on the transaction history of US brokerages uploaded by the user, and also displays useful information such as historical price changes and latest news related to the uploaded portfolio.
 
 # Features to be Implemented
 
