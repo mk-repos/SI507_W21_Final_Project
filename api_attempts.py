@@ -453,9 +453,7 @@ def gen_table_for_history(conn, year: str):
             "Close" REAL,
             "Volume" REAL,
             "AdjustedClose" REAL,
-            "Ratio" REAL,
-            FOREIGN KEY(Symbol)
-                REFERENCES Companies(Symbol)
+            "Ratio" REAL
         );
     '''
     cur.execute(statement)
@@ -543,11 +541,11 @@ for symbol in sample_symbols:
     for year in sample_years:
         df = get_history_with_cache(conn, symbol, year)
 
-# should give error (not in parent table)
-try:
-    get_history_with_cache(conn, "CVS", "2020")
-except sqlite3.IntegrityError:
-    print("History: Foreign key constraint is working correctly")
+# # should give error (not in parent table)
+# try:
+#     get_history_with_cache(conn, "CVS", "2020")
+# except sqlite3.IntegrityError:
+#     print("History: Foreign key constraint is working correctly")
 
 
 # Sample Graphs -----------------------
