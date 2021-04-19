@@ -1,142 +1,152 @@
-[
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T23:52:51.000Z",
-        "title": "Apple (AAPL): Despite Likely iPhone 12 Delays, the Risk-Reward Remains Compelling, Says Analyst",
-        "url": "https://finance.yahoo.com/news/apple-aapl-despite-likely-iphone-235251688.html",
-        "source": "finance yahoo",
-        "summary": "When considering the fortunes of the FAANG family since the viral outbreak, it appears Apple (AAPL) has most to lose. Amazon and Netflix can count their internet driven models as particularly well set up for a hibernation period. And while Google and Facebook stand to lose significant advertising revenue",
-        "image": "https://s.yimg.com/uu/api/res/1.2/Su.8VniRbi_GL2B3BruK5w--~B/aD0zMzc7dz0xMDI0O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-US/smarteranalyst_347/6909df17d6ef3af25ac79e2e6c0078d5",
-        "keywords": [
-            "aapl"
+{
+    "AAPL": {
+        "Fetched": "2021-04-19",
+        "News": [
+            {
+                "symbols": [
+                    "AAPL"
+                ],
+                "timestamp": "2020-03-26T23:52:51.000Z",
+                "title": "Apple (AAPL): Despite Likely iPhone 12 Delays, the Risk-Reward Remains Compelling, Says Analyst",
+                "url": "https://finance.yahoo.com/news/apple-aapl-despite-likely-iphone-235251688.html",
+                "source": "finance yahoo",
+                "summary": "When considering the fortunes of the FAANG family since the viral outbreak, it appears Apple (AAPL) has most to lose. Amazon and Netflix can count their internet driven models as particularly well set up for a hibernation period. And while Google and Facebook stand to lose significant advertising revenue",
+                "image": "https://s.yimg.com/uu/api/res/1.2/Su.8VniRbi_GL2B3BruK5w--~B/aD0zMzc7dz0xMDI0O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-US/smarteranalyst_347/6909df17d6ef3af25ac79e2e6c0078d5",
+                "keywords": [
+                    "aapl"
+                ]
+            },
+            {
+                "symbols": [
+                    "AAPL"
+                ],
+                "timestamp": "2020-03-26T20:12:14.000Z",
+                "title": "Fed to Launch Multitrillion Dollar Helicopter Credit Drop",
+                "url": "https://finance.yahoo.com/news/fed-set-launch-multitrillion-dollar-155501288.html",
+                "source": "finance yahoo",
+                "summary": "(Bloomberg) -- Call it Helicopter Credit.The Federal Reserve is poised to spray trillions of dollars into the U.S. economy once a massive aid package to fight the coronavirus and its aftershocks is signed into law. These actions are unprecedented, going beyond anything it did during the 2008 financial",
+                "image": "https://s.yimg.com/uu/api/res/1.2/nQUiFSCoOmmTTYXgizFbzg--~B/aD02NzU7dz0xMjAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bloomberg_markets_842/14ee1adfbe941526a9718d2a2feccde8",
+                "keywords": [
+                    "aapl"
+                ]
+            },
+            {
+                "symbols": [
+                    "AAPL"
+                ],
+                "timestamp": "2020-03-26T17:05:00.000Z",
+                "title": "How to Trade Apple as Reports Suggest Possible iPhone Delay",
+                "url": "https://www.thestreet.com/investing/trading-apple-aapl-5g-iphone-delay?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Apple  shares have been enjoying a sharp rebound over the past few trading sessions.  In fact, much of the stock market has as well.  Remember, much of the gain in Apple stock came as the company recorded better-than-expected sales for its current iPhone lineup, devices that many investors simply considered as a bridge between the prior lineup and the 5G launch.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/wlNdE8rNRgm7nICQHyN8Iw--~B/aD04MTE7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/thestreet.com/823b34498b0deb94632d0b1c88e637af",
+                "keywords": [
+                    "aapl"
+                ]
+            },
+            {
+                "symbols": [
+                    "AAPL"
+                ],
+                "timestamp": "2020-03-26T15:33:00.000Z",
+                "title": "Apple Is Showing Positive Technical Signals: Our New Strategy",
+                "url": "https://realmoney.thestreet.com/investing/stocks/apple-is-showing-positive-technical-signals-our-new-strategy-15276180?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "In his \"No-Huddle Offense\" segment of Mad Money Wednesday night, Jim Cramer talked about which stocks are working and which ones aren't.  Eventually, when the economy recovers, stocks such as Apple Inc.  will recover.  In the daily Japanese candlestick chart of AAPL, below, we can see a hammer pattern or a bottom reversal last week.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/aR6ISdG0FBw9vtJMk7hvwQ--~B/aD04MjA7dz03MjA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/thestreet.com/1d267551b895ef2be1fff0a94ddc3754",
+                "keywords": [
+                    "aapl"
+                ]
+            },
+            {
+                "symbols": [
+                    "AAPL"
+                ],
+                "timestamp": "2020-03-26T15:15:00.000Z",
+                "title": "Apple Price Target Cut on Concerns About Lower iPhone Demand Due to Global Lockdowns",
+                "url": "https://www.thestreet.com/investing/apple-price-target-cut-global-lockdowns?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Bank of America lowered its price target on Apple  from $320 to $300 on Thursday owing to the impact of various country lockdowns forcing Apple to close retail stores outside Greater China.  The company's base case calls for 6% lower iPhone shipments globally in 2020, based on estimates for when each country's lockdowns are expected to be over, and a bear case of a decline of 13% lower iPhone shipments.  \"Clearly this presents a [near-term] headwind,\" wrote analyst Wamsi Mohan.",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "aapl"
+                ]
+            }
         ]
     },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T20:12:14.000Z",
-        "title": "Fed to Launch Multitrillion Dollar Helicopter Credit Drop",
-        "url": "https://finance.yahoo.com/news/fed-set-launch-multitrillion-dollar-155501288.html",
-        "source": "finance yahoo",
-        "summary": "(Bloomberg) -- Call it Helicopter Credit.The Federal Reserve is poised to spray trillions of dollars into the U.S. economy once a massive aid package to fight the coronavirus and its aftershocks is signed into law. These actions are unprecedented, going beyond anything it did during the 2008 financial",
-        "image": "https://s.yimg.com/uu/api/res/1.2/nQUiFSCoOmmTTYXgizFbzg--~B/aD02NzU7dz0xMjAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bloomberg_markets_842/14ee1adfbe941526a9718d2a2feccde8",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T17:05:00.000Z",
-        "title": "How to Trade Apple as Reports Suggest Possible iPhone Delay",
-        "url": "https://www.thestreet.com/investing/trading-apple-aapl-5g-iphone-delay?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
-        "source": "finance yahoo",
-        "summary": "Apple  shares have been enjoying a sharp rebound over the past few trading sessions.  In fact, much of the stock market has as well.  Remember, much of the gain in Apple stock came as the company recorded better-than-expected sales for its current iPhone lineup, devices that many investors simply considered as a bridge between the prior lineup and the 5G launch.",
-        "image": "https://s.yimg.com/uu/api/res/1.2/wlNdE8rNRgm7nICQHyN8Iw--~B/aD04MTE7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/thestreet.com/823b34498b0deb94632d0b1c88e637af",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T15:33:00.000Z",
-        "title": "Apple Is Showing Positive Technical Signals: Our New Strategy",
-        "url": "https://realmoney.thestreet.com/investing/stocks/apple-is-showing-positive-technical-signals-our-new-strategy-15276180?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
-        "source": "finance yahoo",
-        "summary": "In his \"No-Huddle Offense\" segment of Mad Money Wednesday night, Jim Cramer talked about which stocks are working and which ones aren't.  Eventually, when the economy recovers, stocks such as Apple Inc.  will recover.  In the daily Japanese candlestick chart of AAPL, below, we can see a hammer pattern or a bottom reversal last week.",
-        "image": "https://s.yimg.com/uu/api/res/1.2/aR6ISdG0FBw9vtJMk7hvwQ--~B/aD04MjA7dz03MjA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/thestreet.com/1d267551b895ef2be1fff0a94ddc3754",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T15:15:00.000Z",
-        "title": "Apple Price Target Cut on Concerns About Lower iPhone Demand Due to Global Lockdowns",
-        "url": "https://www.thestreet.com/investing/apple-price-target-cut-global-lockdowns?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
-        "source": "finance yahoo",
-        "summary": "Bank of America lowered its price target on Apple  from $320 to $300 on Thursday owing to the impact of various country lockdowns forcing Apple to close retail stores outside Greater China.  The company's base case calls for 6% lower iPhone shipments globally in 2020, based on estimates for when each country's lockdowns are expected to be over, and a bear case of a decline of 13% lower iPhone shipments.  \"Clearly this presents a [near-term] headwind,\" wrote analyst Wamsi Mohan.",
-        "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T14:50:35.000Z",
-        "title": "Will Apple Delay 5G iPhone Launch Amid Coronavirus Disruption?",
-        "url": "https://www.investors.com/news/technology/click/apple-stock-rises-talk-5g-iphone-launch-delay/?src=A00220&yptr=yahoo",
-        "source": "finance yahoo",
-        "summary": "Wall Street analysts are divided over whether Apple will delay the launch of its 5G iPhone because of disruptions from the Covid-19 coronavirus pandemic. It could be pushed into 2021.",
-        "image": "https://s.yimg.com/uu/api/res/1.2/Nevj_w_OVlprxPxzCTPuqw--~B/aD01NjU7dz0xMDAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/3258114c750007d74f2182bf727d987a",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T07:58:07.000Z",
-        "title": "Asian Markets Turn Lower as Investors Pare Positions Ahead of US Jobless Claims Report",
-        "url": "https://finance.yahoo.com/news/asian-markets-turn-lower-investors-075807809.html",
-        "source": "finance yahoo",
-        "summary": "Apple is preparing the ground to possibly delay the launch of its first 5G iPhones as the coronavirus pandemic threatens global demand and disrupts the company\u2019s product development schedule, sources familiar with the matter have told the Nikkei Asian Review.",
-        "image": "https://s.yimg.com/uu/api/res/1.2/KRntlg_JyDOkjNgd6wuBGQ--~B/aD00MTA7dz02MTU7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/fx_empire_176/5c2b8c60a37fed61b9125bdb675985ad",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T05:11:04.000Z",
-        "title": "Global smartphone sales fell 14% in February as coronvirus spread - Counterpoint",
-        "url": "https://in.finance.yahoo.com/news/global-smartphone-sales-fell-14-051104204.html",
-        "source": "in finance yahoo",
-        "summary": "Global smartphone sales tumbled 14% in February as the coronavirus spread in China and overseas, Counterpoint Research said on Thursday, a likely harbinger of more declines as outbreaks worsen in many parts of the world.  The outbreak prompted Apple Inc and other smartphone makers to shut their China",
-        "image": "https://s.yimg.com/uu/api/res/1.2/WAoWaBQuEJ22f0x7WLxbRw--~B/aD01MjU7dz04MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-US/reuters.com/311e57e16b496f595859e81f464f07b4",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T04:50:38.000Z",
-        "title": "Tim Cook Announces Apple 10M Masks Donation To US Health Workers",
-        "url": "https://finance.yahoo.com/news/tim-cook-announces-apple-10m-045038414.html",
-        "source": "finance yahoo",
-        "summary": "Apple Inc. (NASDAQ: AAPL) CEO Tim Cook announced the company has sourced 10 million face masks and is donating them to the medical professionals in the United States.What Happened Working from home, Cook released a video on Twitter saying, \"Apple has sourced, procured and is donating 10 million",
-        "image": "https://s.yimg.com/uu/api/res/1.2/ukzVwVg8Y3klnIE8SjcV3A--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/c2c712ac87c1fb38a79751d1892dfd80",
-        "keywords": [
-            "aapl"
-        ]
-    },
-    {
-        "symbols": [
-            "AAPL"
-        ],
-        "timestamp": "2020-03-26T04:40:44.000Z",
-        "title": "The World Needs Apple's Annual IPhone Cycle",
-        "url": "https://finance.yahoo.com/news/world-needs-apples-annual-iphone-044044621.html",
-        "source": "finance yahoo",
-        "summary": "(Bloomberg Opinion) -- First it was the Olympics, and now this!\u00a0\u00a0Apple Inc. might delay the release of its upcoming 5G iPhone by several months because of the Covid-19 pandemic, Nikkei reported early Thursday. To be frank, I don\u2019t think such a decision has yet been made and we still have another month",
-        "image": "https://s.yimg.com/uu/api/res/1.2/lzryPykybYLbOSSQjXe4TA--~B/aD03NjQ7dz0xMjk2O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/bloomberg_technology_68/9c5c17aba222ac13af1482f0103c1f83",
-        "keywords": [
-            "aapl"
+    "BNTX": {
+        "Fetched": "2021-04-19",
+        "News": [
+            {
+                "symbols": [
+                    "BNTX"
+                ],
+                "timestamp": "2020-02-03T21:47:00.000Z",
+                "title": "BioNTech Announces Commencement of Public Offering of American Depositary Shares",
+                "url": "https://finance.yahoo.com/news/biontech-announces-commencement-public-offering-214700197.html",
+                "source": "finance yahoo",
+                "summary": "BioNTech SE (Nasdaq: BNTX, \u201cBioNTech\u201d or \u201cthe Company\u201d) announced today, that it has filed a registration statement on Form F-1 with the United States Securities and Exchange Commission (the \u201cSEC\u201d) to offer 6,000,000 American Depositary Shares (\u201cADSs\u201d) representing its ordinary shares.  In addition,",
+                "image": "https://s.yimg.com/uu/api/res/1.2/71GUYCd70AlfkZ0u7VG8aA--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=NzgwOTM1OCMzMzEzOTE4IzIwMDA5ODU=",
+                "keywords": [
+                    "bntx"
+                ]
+            },
+            {
+                "symbols": [
+                    "BNTX"
+                ],
+                "timestamp": "2020-01-13T12:45:10.000Z",
+                "title": "BioNTech Appoints Ryan Richardson as Chief Strategy Officer to Support its Continued Global Expansion",
+                "url": "https://finance.yahoo.com/news/biontech-appoints-ryan-richardson-chief-124510668.html",
+                "source": "finance yahoo",
+                "summary": "BioNTech SE (NASDAQ: BNTX, \u201cBioNTech\u201d or \u201cthe Company\u201d), announced today that the Supervisory Board has appointed Ryan Richardson to the Management Board as Chief Strategy Officer (CSO) and Managing Director.  In his new role he will support and contribute to the creation and implementation of the Company",
+                "image": "https://s.yimg.com/uu/api/res/1.2/ZH0JO4jxpRFD.vtuOWtP1Q--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=Nzc4OTc1NSMzMjg5MzU1IzIwMDA5ODU=",
+                "keywords": [
+                    "bntx"
+                ]
+            },
+            {
+                "symbols": [
+                    "BNTX"
+                ],
+                "timestamp": "2020-01-02T21:15:10.000Z",
+                "title": "BioNTech Announces Publication of Preclinical Data for First-in-Kind CAR-T Cell Therapy Approach Targeting Solid Tumors in Science",
+                "url": "https://finance.yahoo.com/news/biontech-announces-publication-preclinical-data-211510304.html",
+                "source": "finance yahoo",
+                "summary": "Publication of preclinical proof-of-concept data for BNT211 reports Claudin 6 (CLDN6) as a novel target for CAR-T cell therapy of solid tumors and introduces CARVac, a.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/ikmfbSenoNp4V2DWtv3dOA--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=Nzc4NTk2NSMzMjc5MzA4IzIwMDA5ODU=",
+                "keywords": [
+                    "bntx"
+                ]
+            },
+            {
+                "symbols": [
+                    "BNTX"
+                ],
+                "timestamp": "2019-12-18T14:30:10.000Z",
+                "title": "BioNTech to Present at the 38th Annual J.P. Morgan Healthcare Conference",
+                "url": "https://finance.yahoo.com/news/biontech-present-38th-annual-j-143010413.html",
+                "source": "finance yahoo",
+                "summary": "MAINZ, Germany, Dec. 18, 2019 -- BioNTech SE (NASDAQ: BNTX) today announced that CEO and Co-founder Ugur Sahin, MD, will present at the 38th Annual J.P. Morgan Healthcare.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/iS4b_5G5NPgdBHue5d84EA--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=Nzc4MjM0NCMzMjY5Mzk0IzIwMDA5ODU=",
+                "keywords": [
+                    "bntx"
+                ]
+            },
+            {
+                "symbols": [
+                    "BNTX"
+                ],
+                "timestamp": "2019-12-17T12:00:10.000Z",
+                "title": "European Investment Bank provides funding of \u20ac50 million to BioNTech as part of the Investment Plan for Europe",
+                "url": "https://finance.yahoo.com/news/european-investment-bank-provides-funding-120010053.html",
+                "source": "finance yahoo",
+                "summary": "The European Investment Bank (EIB) and BioNTech SE (NASDAQ: BNTX, \u201cBioNTech\u201d or \u201cthe Company\u201d) announced today the signing of a contract which provides financing of \u20ac50 million to BioNTech SE, an international clinical-stage biotechnology company focused on patient-specific immunotherapies for the treatment",
+                "image": "https://s.yimg.com/uu/api/res/1.2/Mfbd_eDawdytcZob67Qleg--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=Nzc4MTIxNiMzMjY2Mzc2IzIwMDA5ODU=",
+                "keywords": [
+                    "bntx"
+                ]
+            }
         ]
     }
-]
+}
