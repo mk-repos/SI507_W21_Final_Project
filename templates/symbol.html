@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Analytical Report of {{ symbol }} Performance</h1>
+    <p>This page provides analytical information for the ticker symbol "{{ symbol }}".</p>
+        <h2>Basic Info of {{ symbol }}</h2>
+            <ul>
+                <li>Ticker Symbol: {{ info_dict['Symbol'] }}</li>
+                <li>Company Name: {{ info_dict['Name'] }}</li>
+                <li>Exchange: {{ info_dict['Exchange'] }}</li>
+            </ul>
+        {% if not whether_etf %}
+        <h2>EPS of {{ symbol }} in the Most Recent Four Quarters</h2>
+        <img src="{{ url_for('static', filename = eps_filename) }}">
+        {% endif %}
+        <h2>Price History of {{ symbol }} in {{ year }}</h2>
+        <img src="{{ url_for('static', filename = history_filename) }}">
+        <h2>Latest News of {{ symbol }}</h2>
+            <table border="1">
+                <tr>
+                    <th>Thumbnail</th>
+                    <th>Title</th>
+                    <th>Summary</th>
+                </tr>
+                {% for article in news_dict['News'] %}
+                <tr>
+                    <td><img src={{ article['image'] }} width="150"></td>
+                    <td><a href={{ article['url'] }}>{{ article['title'] }}</a></td>
+                    <td>{{ article['summary'] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+</body>
+
+</html>

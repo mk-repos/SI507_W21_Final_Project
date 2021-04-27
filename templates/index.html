@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Upload your transaction history in CSV</h1>
+    <form method="POST" action="/converted" enctype="multipart/form-data">
+        <p><input type="file" name="file"></p>
+        <p>
+            Which brokerage firm do you use?
+            <select name="brokerage">
+                <option value="firstrade">Firstrade Securities Inc.</option>>
+            </select>
+        </p>
+        <p>
+            What currency do you want to convert to?
+            <select name="currency">
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+
+</html>

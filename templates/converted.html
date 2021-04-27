@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="Fri, 20 Jan 1984 01:11:11 GMT" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+
+<body>
+    <h1>Your Converted Transaction History</h1>
+    <h2>Selected Currency: {{ currency }}</h2>
+        <p>You can download the gains and losses calculated in your selected currency in CSV format. A summary table is also displayed below.</p>
+        <p><a href='{{url_for('download_file')}}'>Download Converted Table</a></p>
+    <h2>History in {{ currency }}</h2>
+    <img src="{{ url_for('static', filename = filename) }}">
+    <table border="1">
+        <tr>
+            <th>Symbol</th>
+            <th>Quantity</th>
+            <th>Date Acquired</th>
+            <th>Converted Cost</th>
+            <th>Date Sold</th>
+            <th>Converted Sales</th>
+            <th>Gain&Loss</th>
+        </tr>
+        {% for transaction in df_dict %}
+        <tr>
+            <td><a href={{url_for('symbol', symbol=transaction['Symbol'])}}>{{transaction['Symbol']}}</a></td>
+            <td>{{transaction['Quantity']}}</td>
+            <td>{{transaction['Date Acquired']}}</td>
+            <td>{{transaction['Converted Cost']}}</td>
+            <td>{{transaction['Date Sold']}}</td>
+            <td>{{transaction['Converted Sales']}}</td>
+            <td>{{transaction['Gain&Loss']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
