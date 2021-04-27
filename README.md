@@ -26,6 +26,7 @@ You need to get the following four API keys and create a variable for each of th
 
 ## Brief Instruction
 
+ - Run `app.py` to get the flask app running
  - On the top page, the user uploads a `.csv` file and selects the brokerage firm and the currency to be converted from the pull-down menus.
  - On the next page, the user can view a graph of the annual net profit/loss changes, as well as the converted table. A button to download the converted `.csv` is also displayed.
  - If the user clicks on the ticker symbol on the table, the user will be redirected to the company's analytical report.
