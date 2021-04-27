@@ -31,3 +31,7 @@ You need to get the following four API keys and create a variable for each of th
  - On the next page, the user can view a graph of the annual net profit/loss changes, as well as the converted table. A button to download the converted `.csv` is also displayed.
  - If the user clicks on the ticker symbol on the table, the user will be redirected to the company's analytical report.
  - On the report page, the user can view basic information about its ticker symbol, EPS trends, stock price trends, and the latest news.
+
+## Demo Video
+
+ - [W21 SI507 Final Project - Demo (Youtube, Unlisted)](https://youtu.be/MCTK7qwrlB0)
