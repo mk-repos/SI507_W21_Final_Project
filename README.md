@@ -35,3 +35,9 @@ You need to get the following four API keys and create a variable for each of th
 ## Demo Video
 
  - [W21 SI507 Final Project - Demo (Youtube, Unlisted)](https://youtu.be/MCTK7qwrlB0)
+
+## Notes on Compatibility
+
+ We need to know the format of the transaction history of every US brokerage firm, but for this project we limit ourselves to **Firstrade Securities Inc.**, for which we were able to obtain a sample file.
+ 
+ However, the program is designed with expandability in mind, so that it can support other brokers by adding functions.
