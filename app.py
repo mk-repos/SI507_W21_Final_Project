@@ -150,6 +150,19 @@ def load_table_as_pd(conn, tablename: str):
 
 # Exchange Rates --------------------------------------------------------------
 def gen_table_for_currency(conn, currency: str):
+    '''Generate a table of the currency in the database if not exist
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    currency: str
+        currency of choice
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f'''
         CREATE TABLE IF NOT EXISTS "Rates{currency}" (
@@ -161,6 +174,20 @@ def gen_table_for_currency(conn, currency: str):
 
 
 def load_table_currency(conn, currency: str):
+    """Load a table of the curency in the database as a pandas DataFrame
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    currency : str
+        currency of choice
+
+    Returns
+    -------
+    pd.DataFrame
+        dataframe converted from a table
+    """
     # if there is no such table, generate new one
     if not check_table_exist(conn, f"Rates{currency}"):
         gen_table_for_currency(conn, currency)
@@ -176,6 +203,23 @@ def load_table_currency(conn, currency: str):
 
 
 def insert_rate(conn, currency, date, rate):
+    '''Insert a record of exchange rate to the database
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    currency: str
+        currency of choice
+    date: str
+        date of choice
+    rate: str
+        exchange rate of that currency on that day
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f"""
         INSERT INTO "Rates{currency}"
@@ -249,6 +293,17 @@ def get_rates_with_cache(conn, currency: str, date: str):
 
 # ETFs --------------------------------
 def gen_table_for_ETF(conn):
+    '''Generate a table for ETFs in the database if not exist
+
+    Parameters
+    ----------
+    conn
+        connection to database
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f"""
         CREATE TABLE IF NOT EXISTS "ETFs"(
@@ -262,6 +317,23 @@ def gen_table_for_ETF(conn):
 
 
 def insert_etf(conn, symbol, name, exchange):
+    '''Insert a record of etf to the database
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    symbol: str
+        ticker symbol of the ETF
+    name: str
+        full name of the ETF
+    exchange: str
+        exchange in which the ETF is traded
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f"""
         INSERT INTO "ETFs"
@@ -274,6 +346,13 @@ def insert_etf(conn, symbol, name, exchange):
 
 
 def fill_table_for_ETF(conn):
+    """Insert all ETFs available in the market into the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    """
     baseurl = f"https://financialmodelingprep.com/api/v3/etf/list"
     params = {"apikey": FMP_API_KEY}
     etfs = make_request(baseurl=baseurl, params=params)
@@ -282,6 +361,13 @@ def fill_table_for_ETF(conn):
 
 
 def delete_table_for_ETF(conn):
+    """Delete old records of ETF in the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    """
     cur = conn.cursor()
     statement = f"""
         DELETE FROM ETFs
@@ -291,6 +377,18 @@ def delete_table_for_ETF(conn):
 
 
 def get_all_ETFs_with_cache(conn):
+    """Get all ETFs available in the market and cache them in the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+
+    Returns
+    -------
+    pd.DataFrame
+        dataframe containing all the ETFs
+    """
     # if there is no such table, generate new one
     if not check_table_exist(conn, tablename="ETFs"):
         gen_table_for_ETF(conn)
@@ -321,6 +419,17 @@ def get_all_ETFs_with_cache(conn):
 
 # Companies --------------------------------
 def gen_table_for_company(conn):
+    '''Generate a table for companies in the database if not exist
+
+    Parameters
+    ----------
+    conn
+        connection to database
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f'''
         CREATE TABLE IF NOT EXISTS "Companies" (
@@ -333,6 +442,23 @@ def gen_table_for_company(conn):
 
 
 def insert_company(conn, symbol, name, exchange):
+    '''Insert a record of a company to the database
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    symbol: str
+        ticker symbol of the company
+    name: str
+        full name of the company
+    exchange: str
+        exchange in which the company is traded
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f"""
         INSERT INTO "Companies"
@@ -345,19 +471,41 @@ def insert_company(conn, symbol, name, exchange):
 
 
 def get_company_info_for(symbol: str):
+    """Make an API call to get company info
+
+    Parameters
+    ----------
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    dict
+        returned json
+    """
     baseurl = "https://financialmodelingprep.com/api/v3/search"
     params = {"query": symbol, "apikey": FMP_API_KEY, "limit": "1"}
     return make_request(baseurl=baseurl, params=params)
 
 
-def get_market_cap_for(symbol: str):
-    baseurl = f"https://financialmodelingprep.com/api/v3/"\
-        f"market-capitalization/{symbol}"
-    params = {"apikey": FMP_API_KEY}
-    return make_request(baseurl=baseurl, params=params)
+# def get_market_cap_for(symbol: str):
+#     baseurl = f"https://financialmodelingprep.com/api/v3/"\
+#         f"market-capitalization/{symbol}"
+#     params = {"apikey": FMP_API_KEY}
+#     return make_request(baseurl=baseurl, params=params)
 
 
 def fill_record_for_company(conn, symbol):
+    """Insert a record of the company into the database
+       after making an API request
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    symbol : str
+        ticker symbol of the company
+    """
     # call APIs
     info = get_company_info_for(symbol)
     # insert new record into db
@@ -368,6 +516,20 @@ def fill_record_for_company(conn, symbol):
 
 
 def get_company_info_with_cache(conn, symbol: str):
+    """Get company info using a API call & caches in the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    pd.DataFrame
+        pandas DataFrame containing info of the company
+    """
     # if there is no such table, generate new one
     if not check_table_exist(conn, tablename="Companies"):
         gen_table_for_company(conn)
@@ -382,6 +544,17 @@ def get_company_info_with_cache(conn, symbol: str):
 
 # EPS ---------------------------------
 def gen_table_for_eps(conn):
+    '''Generate a table for EPSs in the database if not exist
+
+    Parameters
+    ----------
+    conn
+        connection to database
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f'''
         CREATE TABLE IF NOT EXISTS "EPS" (
@@ -411,6 +584,25 @@ def insert_eps(conn, symbol,
                eps2date, eps2reported, eps2expected,
                eps3date, eps3reported, eps3expected,
                eps4date, eps4reported, eps4expected):
+    '''Insert a record of EPS in the latest 4 quarters for the company
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    symbol: str
+        ticker symbol of the company
+    eps1date: str
+        closing date of the quarter
+    eps1reported:
+        actual EPS reported
+    eps1expected:
+        consensus estimates of EPS
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f"""
         INSERT INTO "EPS"
@@ -429,6 +621,18 @@ def insert_eps(conn, symbol,
 
 
 def get_eps_for(symbol: str):
+    """For the selected companym, get EPSs in the latest four quarters
+
+    Parameters
+    ----------
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    dict
+        returned json from the API call
+    """
     baseurl = "https://www.alphavantage.co/query"
     params = {
         "function": "EARNINGS",
@@ -439,6 +643,16 @@ def get_eps_for(symbol: str):
 
 
 def fill_record_for_eps(conn, symbol):
+    """Insert a record of EPSs for the selected company
+       using API. If it reaches API limit, pass
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    symbol : str
+        ticker symbol of the company
+    """
     try:
         # call APIs
         eps = get_eps_for(symbol)
@@ -462,6 +676,15 @@ def fill_record_for_eps(conn, symbol):
 
 
 def delete_record_for_eps(conn, symbol):
+    """Delete a record of the company from EPS table in the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    symbol : str
+        ticker symbol of the company
+    """
     cur = conn.cursor()
     statement = f"""
         DELETE FROM EPS
@@ -472,6 +695,20 @@ def delete_record_for_eps(conn, symbol):
 
 
 def get_eps_with_cache(conn, symbol: str):
+    """Get EPSs of the company using API & caches in the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame containing EPSs of the company
+    """
     # if there is no such table, generate new one
     if not check_table_exist(conn, tablename="EPS"):
         gen_table_for_eps(conn)
@@ -511,6 +748,19 @@ def get_eps_with_cache(conn, symbol: str):
 
 # Time Series -----------------------------------------------------------------
 def gen_table_for_history(conn, year: str):
+    '''Generate a table of timeseries for a year in the database if not exist
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    year: str
+        year of choice
+
+    Returns
+    -------
+    None
+    '''
     cur = conn.cursor()
     statement = f'''
         CREATE TABLE IF NOT EXISTS "History{year}" (
@@ -529,6 +779,18 @@ def gen_table_for_history(conn, year: str):
 
 
 def get_history_for(symbol: str):
+    """Make an API call to get time series of the company
+
+    Parameters
+    ----------
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    dict
+        returned json
+    """
     baseurl = "https://www.alphavantage.co/query"
     params = {
         "function": "TIME_SERIES_DAILY_ADJUSTED",  # account for split/dividend
@@ -541,6 +803,34 @@ def get_history_for(symbol: str):
 
 def insert_history(conn, symbol, date, open, high, low, close, volume,
                    adjusted):
+    '''Insert a record of daily price data of the selected company/date
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    symbol: str
+        ticker symbol of the company/ETF
+    date: str
+        date of this record
+    open: str
+        open price of the stock on that day
+    high: str
+        highest price of the stock on that day
+    low: str
+        lowest price of the stock on that day
+    close: str
+        closing price of the stock on that day
+    volume: str
+        trading volume of the stock on that day
+    adjusted: str
+        adjusted closing price accounting for split/devidend
+
+
+    Returns
+    -------
+    None
+    '''
     # if there is no such table, generate new one
     if not check_table_exist(conn, f"History{date[:4]}"):
         gen_table_for_history(conn, date[:4])
@@ -556,6 +846,21 @@ def insert_history(conn, symbol, date, open, high, low, close, volume,
 
 
 def load_table_history(conn, year: str):
+    """Load a table of timeseries of the year in the database
+       as a pandas DataFrame
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    year : str
+        year of choice
+
+    Returns
+    -------
+    pd.DataFrame
+        dataframe converted from a table
+    """
     # if there is no such table, generate new one
     if not check_table_exist(conn, f"History{year}"):
         gen_table_for_history(conn, year)
@@ -571,6 +876,23 @@ def load_table_history(conn, year: str):
 
 
 def get_history_with_cache(conn, symbol: str, year: str):
+    """Get time series of the selected company/year
+       using API call and cache in the database
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    symbol : str
+        ticker symbol of the copany
+    year : str
+        year of choice
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame containing time series data
+    """
     if not check_table_exist(conn, f"History{year}"):
         gen_table_for_history(conn, year)
     # load db as pandas Dataframe
@@ -613,6 +935,20 @@ def get_history_with_cache(conn, symbol: str, year: str):
 
 # Draw TimeSeries Graphs ------------------------------------------------------
 def gen_plot_history(conn, symbol: str, year: str, timestamp: str):
+    """Draw&save time series plot of the selected company/year
+
+    Parameters
+    ----------
+    conn
+        connection to the server
+    symbol : str
+        ticker symbol of the company
+    year : str
+        year of choice
+    timestamp : str
+        timestamp indicating when this function called,
+        used for filenames in order to prevent browser cache
+    """
     df = get_history_with_cache(conn, symbol, year)
     # remove existing plot
     if glob.glob('images/history*.png'):
@@ -652,6 +988,18 @@ def gen_plot_history(conn, symbol: str, year: str, timestamp: str):
 
 # Financial News --------------------------------------------------------------
 def get_news(symbol):
+    """Get latest 5 news for the company by making API call
+
+    Parameters
+    ----------
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    dict
+        returned json
+    """
     baseurl = f"https://api.polygon.io/v1/meta/symbols/{symbol}/news"
     params = {"perpage": "5",
               "page": "1",
@@ -663,6 +1011,18 @@ def get_news(symbol):
 
 
 def get_news_with_cache(symbol):
+    """Get latest 5 news for the company using API call and cache
+
+    Parameters
+    ----------
+    symbol : str
+        ticker symbol of the company
+
+    Returns
+    -------
+    dict
+        returned json
+    """
     cache_dict = open_cache(filename=NEWS_CACHE)
     # if already cached
     if symbol in cache_dict:
@@ -691,14 +1051,50 @@ def get_news_with_cache(symbol):
 
 # Helper funcs ------------------------
 def clean_dollar_to_float(value):
+    """Remove "$" signs and "," from string
+
+    Parameters
+    ----------
+    value : str
+        value with "$" signs and "," (ex. $5,444.00)
+
+    Returns
+    -------
+    str
+        cleaned string
+    """
     return (value.replace('$', '').replace(',', ''))
 
 
 def clean_date_firstrade(datestr):
+    """Format datetime of original CSV
+
+    Parameters
+    ----------
+    datestr : str
+        a string of the date in original format
+
+    Returns
+    -------
+    str
+        converted string of the date (i.e. 2020-01-01)
+    """
     return datetime.datetime.strptime(datestr, '%m/%d/%Y').strftime('%Y-%m-%d')
 
 
 def clean_firstrade(df):
+    """Clean a transaction history of Firstrade Inc.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame directly generated by pd.read_csv()
+
+    Returns
+    -------
+    pd.DataFrame
+        cleaned dataframe
+    """
     # set column names
     df.columns = df.iloc[0]
     # drop unnecessary rows
@@ -720,6 +1116,25 @@ def clean_firstrade(df):
 
 
 def convert_transaction_history(conn, df, broker, currency):
+    """Convert the original transaction history uploaded by the user
+       to the selected currency
+
+    Parameters
+    ----------
+    conn
+        connection to the database
+    df : pd.DataFrame
+        original DataFrame directly generated by pd.read_csv()
+    broker : str
+        string indicating the brokeage firm the user is using
+    currency : str
+        string indicating the currency user want to convert to
+
+    Returns
+    -------
+    pd.DataFrame
+        cleaned and converted DataFrame
+    """
     # clean data according to brokerage firm
     if broker == "firstrade":
         df = clean_firstrade(df)
@@ -752,6 +1167,18 @@ def convert_transaction_history(conn, df, broker, currency):
 
 
 def gen_plot_cumulative_gain(df, currency, filename):
+    """Draw&save cumulative gain/loss plot
+
+    Parameters
+    ----------
+    conn
+        connection to the server
+    currency : str
+        currency of choice
+    timestamp : str
+        timestamp indicating when this function called,
+        used for filenames in order to prevent browser cache
+    """
     # remove existing plot
     if glob.glob('images/cumulative*.png'):
         for f in glob.glob("images/cumulative*.png"):
@@ -780,6 +1207,13 @@ def gen_plot_cumulative_gain(df, currency, filename):
 
 
 def output_csv(df):
+    """Export pandas DataFrame to CSV
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        DataFrame to be exported
+    """
     # remove existing plot
     if os.path.exists("files/converted.csv"):
         os.remove("files/converted.csv")
@@ -788,6 +1222,18 @@ def output_csv(df):
 
 
 def clean_eps(eps):
+    """Clean EPS data to draw a plot later
+
+    Parameters
+    ----------
+    eps : pd.DataFrame
+        original DataFrame
+
+    Returns
+    -------
+    pd.DataFrame
+        cleaned DataFrame in long format
+    """
     # create dates column
     dates = eps[['EPS1Date', 'EPS2Date', 'EPS3Date', 'EPS4Date']]
     dates = dates.transpose().reset_index(drop=True)
@@ -819,6 +1265,18 @@ def clean_eps(eps):
 
 
 def gen_plot_eps(eps, symbol, timestamp):
+    """Draw&save EPS plot of the company
+
+    Parameters
+    ----------
+    conn
+        connection to the server
+    symbol : str
+        ticker symbol of the company
+    timestamp : str
+        timestamp indicating when this function called,
+        used for filenames in order to prevent browser cache
+    """
     if glob.glob('images/eps*.png'):
         for f in glob.glob("images/eps*.png"):
             os.remove(f)
