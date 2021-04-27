@@ -1,6 +1,6 @@
 {
     "AAPL": {
-        "Fetched": "2021-04-19",
+        "Fetched": "2021-04-26",
         "News": [
             {
                 "symbols": [
@@ -145,6 +145,549 @@
                 "image": "https://s.yimg.com/uu/api/res/1.2/Mfbd_eDawdytcZob67Qleg--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=Nzc4MTIxNiMzMjY2Mzc2IzIwMDA5ODU=",
                 "keywords": [
                     "bntx"
+                ]
+            }
+        ]
+    },
+    "SPY": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "SPY"
+                ],
+                "timestamp": "2020-03-27T15:00:23.000Z",
+                "title": "What To Know About #MintTheCoin",
+                "url": "https://finance.yahoo.com/news/know-mintthecoin-150023348.html",
+                "source": "finance yahoo",
+                "summary": "In an effort to curb the economic damage already done by the coronavirus, U.S. Rep. Rashida Tlaib (D-Michigan) has proposed a $2-trillion solution -- and awakened a 2013 hashtag in the process. The MintTheCoin campaign is trending as idled workers demand a complex response to unemployment triggered by",
+                "image": "https://s.yimg.com/uu/api/res/1.2/9.JjstVbTuMu1LvNhdxrHg--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/9f1f5774f225a22119e7a6e54a16ff2d",
+                "keywords": [
+                    "spy"
+                ]
+            },
+            {
+                "symbols": [
+                    "SPY"
+                ],
+                "timestamp": "2020-03-27T05:21:08.000Z",
+                "title": "Trump Lashes Out At Washington, Michigan Governors For Pandemic Response: 'We Don't Like To See The Complaints'",
+                "url": "https://finance.yahoo.com/news/trump-lashes-washington-michigan-governors-052108929.html",
+                "source": "finance yahoo",
+                "summary": "President Donald Trump on Thursday criticized governors of Washington and Michigan for what he said were unhelpful responses to the novel coronavirus (COVID-19) pandemic.Inslee, 'A Failed Presidential Candidate'Trump told Fox News in a telephonic interview that Washington Governor Jay Inslee",
+                "image": "https://s.yimg.com/uu/api/res/1.2/SVYyaml9svHaRu3Q7sJcBQ--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/c21aa99a03332dd118a30d9df4b75c5e",
+                "keywords": [
+                    "spy"
+                ]
+            },
+            {
+                "symbols": [
+                    "SPY"
+                ],
+                "timestamp": "2020-03-26T17:00:25.000Z",
+                "title": "10 Worst Ways To Use Your $1,200 Stimulus Check",
+                "url": "https://finance.yahoo.com/news/10-worst-ways-1-200-170025500.html",
+                "source": "finance yahoo",
+                "summary": "It's looking increasingly likely that many Americans will be getting at least one stimulus check from the government in coming weeks worth up to $1,200 per adult.We compiled a list of 10 of the best things to do with your $1,200 stimulus check, but just for fun (and education) we decided to put together",
+                "image": "https://s.yimg.com/uu/api/res/1.2/d2CErxzy7N2Dz453oOYegw--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/0543761370ab5d190400d6a5d729face",
+                "keywords": [
+                    "spy"
+                ]
+            },
+            {
+                "symbols": [
+                    "SPY"
+                ],
+                "timestamp": "2020-03-26T14:52:54.000Z",
+                "title": "Has the Market Bottomed Out?",
+                "url": "https://www.investopedia.com/has-the-market-bottomed-out-4800945?utm_campaign=quote-yahoo&utm_source=yahoo&utm_medium=referral&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Bottom callers are coming out of their caves after the Dow Jones Industrial Average posted its biggest one-day gain since 1933.",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "spy"
+                ]
+            },
+            {
+                "symbols": [
+                    "SPY"
+                ],
+                "timestamp": "2020-03-26T13:44:10.000Z",
+                "title": "Powell Expects Atypical Downturn As Liquidity, Credit Dries Up, But Says 'Nothing Fundamentally Wrong With Our Economy'",
+                "url": "https://finance.yahoo.com/news/powell-expects-atypical-downturn-liquidity-134410977.html",
+                "source": "finance yahoo",
+                "summary": "Spooked by the coronavirus, investors worldwide have transferred their money to low-risk investments.\"That's understandable,\" Jerome Powell, chairman of the Federal Reserve, said Thursday on The Today Show. \"But what that's meant is that many places in the capital markets, which",
+                "image": "https://s.yimg.com/uu/api/res/1.2/tClLMqPJJ8JYkOdEF2qufw--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/1ee6fb7e6f46ff933bf8bfa7c1e55a97",
+                "keywords": [
+                    "spy"
+                ]
+            }
+        ]
+    },
+    "DAL": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "DAL"
+                ],
+                "timestamp": "2020-03-27T15:27:54.000Z",
+                "title": "Airline Stocks Fall As Industry Seen Not Getting Back To Normal Before 2023",
+                "url": "https://www.investors.com/news/american-airlines-stock-airline-stocks-normal-2023/?src=A00220&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "American Airlines cut capacity further, and an analyst said the industry might not get back to normal until after 2023.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/ls0CpKRxfTCgT7uzaYybkA--~B/aD01NjM7dz0xMDAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/86dd6f57d2a12bf496ac6015615ca762",
+                "keywords": [
+                    "dal"
+                ]
+            },
+            {
+                "symbols": [
+                    "DAL"
+                ],
+                "timestamp": "2020-03-27T14:06:30.000Z",
+                "title": "Decade of Growth: Hartsfield-Jackson remains world\u2019s busiest airport",
+                "url": "https://www.bizjournals.com/atlanta/news/2020/03/27/hartsfield-jackson-remains-world-s-busiest-airport.html?ana=yahoo&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Hartsfield-Jackson and Delta Air Lines' tremendous growth and expansion were among Atlanta Business Chronicle's top stories of the decade.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/gxAu7vrngzZ0YOGzWwHL8A--~B/aD04MDE7dz0xMjAxO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-us/bizjournals.com/d345f5c40b41a84d5874e64070d815aa",
+                "keywords": [
+                    "dal"
+                ]
+            },
+            {
+                "symbols": [
+                    "DAL"
+                ],
+                "timestamp": "2020-03-27T11:36:14.000Z",
+                "title": "How Does Delta Air Lines's (NYSE:DAL) P/E Compare To Its Industry, After The Share Price Drop?",
+                "url": "https://finance.yahoo.com/news/does-delta-air-liness-nyse-113614582.html",
+                "source": "finance yahoo",
+                "summary": "To the annoyance of some shareholders, Delta Air Lines (NYSE:DAL) shares are down a considerable 36% in the last...",
+                "image": "https://s.yimg.com/uu/api/res/1.2/fYvzxzk0hSNP6EcoGitFKw--~B/aD00MzI7dz0xMTk0O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/simply_wall_st__316/0ae45a2f52458087c8f64e8dd4128ac9",
+                "keywords": [
+                    "dal"
+                ]
+            },
+            {
+                "symbols": [
+                    "DAL"
+                ],
+                "timestamp": "2020-03-27T11:00:02.000Z",
+                "title": "Travel slump, sick staff force cash-worried U.S. airports to downsize",
+                "url": "https://finance.yahoo.com/news/travel-slump-sick-staff-force-110002114.html",
+                "source": "finance yahoo",
+                "summary": "With fewer planes flying and more security and traffic control officers testing positive for the coronavirus, airports are closing terminals, concessions and checkpoints, even while trying to retain jobs with the hope of a post-crisis pickup.  Orlando International Airport managers in Florida were this",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "dal"
+                ]
+            },
+            {
+                "symbols": [
+                    "DAL"
+                ],
+                "timestamp": "2020-03-26T21:45:09.000Z",
+                "title": "Delta Air Lines (DAL) Gains But Lags Market: What You Should Know",
+                "url": "https://finance.yahoo.com/news/delta-air-lines-dal-gains-214509723.html",
+                "source": "finance yahoo",
+                "summary": "In the latest trading session, Delta Air Lines (DAL) closed at $31.70, marking a +1.93% move from the previous day.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/v6pWc5mKxraYlh.Xb8D_lw--~B/aD01MDY7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/1154d43aaeb65735a640003549116295",
+                "keywords": [
+                    "dal"
+                ]
+            }
+        ]
+    },
+    "SSO": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "SSO"
+                ],
+                "timestamp": "2019-02-05T19:14:53.000Z",
+                "title": "SSR Mining Inc: A Buy For The Long Term",
+                "url": "https://seekingalpha.com/article/4238238-ssr-mining-inc-buy-long-term?",
+                "source": "SeekingAlpha",
+                "summary": "Preamble A few years ago, the formally named Silver Standard changed its name to SSR Mining (NASDAQ: SSRM), to better reflect its involvement in both silver and gold mining activities. The previous name suggested that it was predominantly a silver producer, however since acquiring the Mar\u2026",
+                "keywords": [
+                    "futures trading",
+                    "metal and mineral",
+                    "nasdaq01",
+                    "nevada01",
+                    "sso",
+                    "sso:ca",
+                    "ssri",
+                    "tsxtsx01"
+                ]
+            },
+            {
+                "symbols": [
+                    "SSO"
+                ],
+                "timestamp": "2018-12-31T09:30:19.000Z",
+                "title": "What Wall Street strategists forecast for the S&P 500 in 2019",
+                "url": "https://finance.yahoo.com/news/wall-street-strategists-forecast-sp-500-2019-131219152.html",
+                "source": "finance yahoo",
+                "summary": "Here's what Wall Street\u2019s top strategists are telling their clients about the coming year.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/LMoEWdv0HmHDu2Jv5Td38w--~B/aD0xNDQwO3c9MjE2ODtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2018-12/b27dedf0-fc0a-11e8-a6ff-866db130eae8",
+                "keywords": [
+                    "sso"
+                ]
+            },
+            {
+                "symbols": [
+                    "SSO"
+                ],
+                "timestamp": "2018-03-22T17:11:07.000Z",
+                "title": "ProShares Ultra S&P500 Experiences Big Inflow",
+                "url": "https://www.nasdaq.com/article/proshares-ultra-sp500-experiences-big-inflow-cm938354",
+                "source": "NASDAQ.com",
+                "summary": "Looking today at week-over-week shares outstanding changes among the universe of ETFs covered at ETF Channel , one standout is the ProShares Ultra.",
+                "image": "https://www.nasdaq.com/images/dreamit.jpg",
+                "keywords": [
+                    "nasdaq news",
+                    "market headlines",
+                    "market news",
+                    "stock market headlines",
+                    "stock market news"
+                ]
+            },
+            {
+                "symbols": [
+                    "SSO"
+                ],
+                "timestamp": "2017-12-28T17:12:22.000Z",
+                "title": "Interesting SSO Put And Call Options For February 2018",
+                "url": "https://www.nasdaq.com/article/interesting-sso-put-and-call-options-for-february-20181-cm897880",
+                "source": "NASDAQ.com",
+                "summary": "Investors in Proshares Ultra S&amp;P500 (Symbol: SSO) saw new options become available today, for the February 2018 expiration. At Stock Options.",
+                "image": "https://www.nasdaq.com/images/dreamit.jpg",
+                "keywords": [
+                    "nasdaq news",
+                    "market headlines",
+                    "market news",
+                    "stock market headlines",
+                    "stock market news"
+                ]
+            },
+            {
+                "symbols": [
+                    "SSO"
+                ],
+                "timestamp": "2017-12-21T16:08:45.000Z",
+                "title": "Interesting SSO Put And Call Options For February 2018",
+                "url": "https://www.nasdaq.com/article/interesting-sso-put-and-call-options-for-february-2018-cm895275",
+                "source": "NASDAQ.com",
+                "summary": "Investors in Proshares Ultra S&amp;P500 (Symbol: SSO) saw new options begin trading today, for the February 2018 expiration. At Stock Options Channel.",
+                "image": "https://www.nasdaq.com/images/dreamit.jpg",
+                "keywords": [
+                    "nasdaq news",
+                    "market headlines",
+                    "market news",
+                    "stock market headlines",
+                    "stock market news"
+                ]
+            }
+        ]
+    },
+    "NVAX": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "NVAX"
+                ],
+                "timestamp": "2020-03-25T16:14:32.000Z",
+                "title": "Can Novavax\u2019s Surge Continue Following Positive Data for Flu Vaccine?",
+                "url": "https://finance.yahoo.com/news/novavax-surge-continue-following-positive-161432728.html",
+                "source": "finance yahoo",
+                "summary": "If you think the broader market\u2019s extreme pendulum swings are the definition of volatility, you should have a conversation with long-term investors of vaccine specialist Novavax (NVAX). To quickly recap the last 24 months: In 2018, the stock gained 73%, paid it back with interest during a 90% slide in",
+                "image": "https://s.yimg.com/uu/api/res/1.2/5_Fc_Bj5PqaSKZ9vvZFNGQ--~B/aD00ODU7dz0xMjA3O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-US/tipranks_452/e8ba063a02e0339094ece37ff8569f1f",
+                "keywords": [
+                    "nvax"
+                ]
+            },
+            {
+                "symbols": [
+                    "NVAX"
+                ],
+                "timestamp": "2020-03-24T15:58:00.000Z",
+                "title": "Novavax Surges as Late-Stage Flu Treatment Achieves Endpoints",
+                "url": "https://www.thestreet.com/investing/novavax-late-stage-flu-treatment?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Novavax surges after its NanoFlu treatment for seasonal flu achieves all primary endpoints in a phase 3 trial.",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "nvax"
+                ]
+            },
+            {
+                "symbols": [
+                    "NVAX"
+                ],
+                "timestamp": "2020-03-24T13:30:40.000Z",
+                "title": "Novavax Shares Rally On Flu Vaccine Study Results: What You Need To Know",
+                "url": "https://finance.yahoo.com/news/novavax-shares-rally-flu-vaccine-133040594.html",
+                "source": "finance yahoo",
+                "summary": "Novavax, Inc.  (NASDAQ: NVAX), which was in the news recently on account of its  COVID-19 vaccine development program,  is in the spotlight yet again Tuesday. Flu Vaccine Candidate Aces Study The small-cap late-stage biotech announced positive top-line results Tuesday for its pivotal late-stage study",
+                "image": "https://s.yimg.com/uu/api/res/1.2/qCXwdSQUXz3eko.Zi7P2NQ--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/e65312b03c626261ab40757e0eecd166",
+                "keywords": [
+                    "nvax"
+                ]
+            },
+            {
+                "symbols": [
+                    "NVAX"
+                ],
+                "timestamp": "2020-03-24T11:50:19.000Z",
+                "title": "Novavax\u2019s seasonal flu vaccine just got great news. And it\u2019s a big deal.",
+                "url": "https://www.bizjournals.com/washington/news/2020/03/24/novavax-s-seasonal-flu-vaccine-just-got-great-news.html?ana=yahoo&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "The company's flu vaccine tests follow two devastating clinical trial failures for the Maryland biotech.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/s7p96oPj_gSzYLZ.tTcOAQ--~B/aD05NjU7dz0xNDQwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-us/bizjournals.com/d3a72ce6131d905c14bab36f6d8e8827",
+                "keywords": [
+                    "nvax"
+                ]
+            },
+            {
+                "symbols": [
+                    "NVAX"
+                ],
+                "timestamp": "2020-03-24T10:00:10.000Z",
+                "title": "Novavax\u2019 NanoFlu Achieves All Primary Endpoints In Phase 3 Clinical Trial",
+                "url": "https://finance.yahoo.com/news/novavax-nanoflu-achieves-primary-endpoints-100010015.html",
+                "source": "finance yahoo",
+                "summary": "Novavax, Inc. (NVAX), a late-stage biotechnology company developing next-generation vaccines for serious infectious diseases, today announced positive top-line results of its pivotal Phase 3 clinical trial of NanoFlu\u2122, its recombinant quadrivalent seasonal influenza vaccine candidate with its proprietary",
+                "image": "https://s.yimg.com/uu/api/res/1.2/szjWSQr63NqEoeJWm78qNA--~B/aD0xO3c9MTtzbT0xO2FwcGlkPXl0YWNoeW9u/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_GlobeNewsWire_EmailNotif_LIVE/ti?nf=Nzg3MzU5MyMzNDA4NTMwIzIwMTkwMzM=",
+                "keywords": [
+                    "nvax"
+                ]
+            }
+        ]
+    },
+    "MRNA": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "MRNA"
+                ],
+                "timestamp": "2020-03-27T15:30:03.000Z",
+                "title": "Why Is Moderna (MRNA) Up 6.8% Since Last Earnings Report?",
+                "url": "https://finance.yahoo.com/news/why-moderna-mrna-6-8-153003866.html",
+                "source": "finance yahoo",
+                "summary": "Moderna (MRNA) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/7JrdKSg4vumJRdGrrRUb0A--~B/aD02MDI7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/45c083e4721b0d0d1f6e431ec0bb5cc1",
+                "keywords": [
+                    "mrna"
+                ]
+            },
+            {
+                "symbols": [
+                    "MRNA"
+                ],
+                "timestamp": "2020-03-25T12:00:00.000Z",
+                "title": "Moderna to Present at MIT Lecture Series",
+                "url": "https://finance.yahoo.com/news/moderna-present-mit-lecture-series-120000362.html",
+                "source": "finance yahoo",
+                "summary": "Moderna to present at MIT Distinguished Lecture Series.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/yApUXa8R0u1lklleqDc4GA--~B/aD0yNzt3PTEyMDtzbT0xO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/business-wire.com/ba3eb241aef6ad1c0192b3f56417a724",
+                "keywords": [
+                    "mrna"
+                ]
+            },
+            {
+                "symbols": [
+                    "MRNA"
+                ],
+                "timestamp": "2020-03-23T17:48:23.000Z",
+                "title": "Moderna could make experimental COVID-19 vaccine available to healthcare workers by fall \u2013 TechCrunch",
+                "url": "http://social.techcrunch.com/2020/03/23/moderna-could-make-experimental-covid-19-vaccine-available-to-healthcare-workers-by-fall/",
+                "source": "TechCrunch",
+                "summary": "There are some hard limits to the vaccine development process that mean we are not going to see any preventative immune therapies to fight the new coronavirus for at least a year to 18 months. But Moderna, which is behind the first potential vaccine to enter human clinical trials in the U.S., provi\u2026",
+                "image": "https://techcrunch.com/wp-content/uploads/2020/03/GettyImages-1072212338.jpg?w=600",
+                "keywords": [
+                    "mrna"
+                ]
+            },
+            {
+                "symbols": [
+                    "MRNA"
+                ],
+                "timestamp": "2020-03-20T21:45:09.000Z",
+                "title": "Moderna (MRNA) Stock Moves -0.46%: What You Should Know",
+                "url": "https://finance.yahoo.com/news/moderna-mrna-stock-moves-0-214509619.html",
+                "source": "finance yahoo",
+                "summary": "In the latest trading session, Moderna (MRNA) closed at $28.14, marking a -0.46% move from the previous day.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/YLMsTqXvevD8pPcVvjI3Gg--~B/aD02MDE7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/bdc2850a48a0f40806db817a9e24f36f",
+                "keywords": [
+                    "mrna"
+                ]
+            },
+            {
+                "symbols": [
+                    "MRNA"
+                ],
+                "timestamp": "2020-03-20T18:12:32.000Z",
+                "title": "Hedge Funds Were Flocking Into Moderna, Inc. (MRNA) Before The Coronavirus",
+                "url": "https://finance.yahoo.com/news/hedge-funds-were-flocking-moderna-181232870.html",
+                "source": "finance yahoo",
+                "summary": "We hate to say this but, we told you so. On February 27th we published an article with the title Recession is Imminent: We Need A Travel Ban NOW and predicted a US recession when the S&P 500 Index was trading at the 3150 level. We also told you to short the market and buy [\u2026]",
+                "image": "https://s.yimg.com/uu/api/res/1.2/yTWfum7_AWCSo25W_WuYbA--~B/aD03NzI7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/insidermonkey.com/ce5b7a84019f92c68a44a40942e27d60",
+                "keywords": [
+                    "mrna"
+                ]
+            }
+        ]
+    },
+    "VNQ": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "VNQ"
+                ],
+                "timestamp": "2020-01-13T14:37:02.000Z",
+                "title": "The Zacks Analyst Blog Highlights: SPY, XLU and VNQ",
+                "url": "https://finance.yahoo.com/news/zacks-analyst-blog-highlights-spy-143702621.html",
+                "source": "finance yahoo",
+                "summary": "The Zacks Analyst Blog Highlights: SPY, XLU and VNQ",
+                "image": "https://s.yimg.com/uu/api/res/1.2/yPTryXb147ajW8.3yAO_Fw--~B/aD00MDA7dz02MzU7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/a3cb5aa3add92d8878ecdd2d7a89c45a",
+                "keywords": [
+                    "vnq"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQ"
+                ],
+                "timestamp": "2019-11-06T15:38:58.000Z",
+                "title": "Is It Time to Start Investing in Real Estate ETFs \u2018REIT\u2019 Now?",
+                "url": "https://finance.yahoo.com/news/time-start-investing-real-estate-153858995.html",
+                "source": "finance yahoo",
+                "summary": "The stock market is humming along with the Dow Jones Industrial Average and the S&P 500 reaching new highs, but in the rearview mirror is still a real estate market that has been weighed down by high prices despite lower rates.  With the possibility of an extended bull run that\u2019s on its last legs, real",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vnq"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQ"
+                ],
+                "timestamp": "2019-10-04T15:00:03.000Z",
+                "title": "Chances of Fed Rate Cut in October Rise: Sector ETFs to Buy",
+                "url": "https://finance.yahoo.com/news/chances-fed-rate-cut-october-150003980.html",
+                "source": "finance yahoo",
+                "summary": "We have highlighted popular ETFs from the sectors set to benefit further on rate cuts.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/4bKA1bkMnNuljTbf2E_5Ig--~B/aD00MDA7dz02MzU7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/768fd8130fee7a20c9eaf2ea78de06d7",
+                "keywords": [
+                    "vnq"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQ"
+                ],
+                "timestamp": "2019-09-19T14:05:02.000Z",
+                "title": "Sector ETFs, Stocks Set to Explode After Another Rate Cut",
+                "url": "https://finance.yahoo.com/news/sector-etfs-stocks-set-explode-140502437.html",
+                "source": "finance yahoo",
+                "summary": "The Fed slashed interest rates for the second time since the financial crisis by 25 bps to 1.75-2% in its policy meeting to sustain a decade-long economic expansion.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/4bKA1bkMnNuljTbf2E_5Ig--~B/aD00MDA7dz02MzU7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/768fd8130fee7a20c9eaf2ea78de06d7",
+                "keywords": [
+                    "vnq"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQ"
+                ],
+                "timestamp": "2019-08-29T19:50:26.000Z",
+                "title": "5 All-Weather ETFs to Buy for Turbulent Markets",
+                "url": "https://finance.yahoo.com/news/5-weather-etfs-buy-turbulent-195026783.html",
+                "source": "finance yahoo",
+                "summary": "The U.S. stock market continues to hit turbulence. Whether due to concerns over the ongoing trade war between the U.S. and China, increasing media attention on a possible U.S. recession or other economic challenges, it behooves you to make sure that your portfolio is set up to deal with risk while still",
+                "image": "https://s.yimg.com/uu/api/res/1.2/YiRlhoExkJAnD2.VELNeQg--~B/aD00MDA7dz03Mjg7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-US/investorplace_417/bfa80543e048d4682b13a018ba9cca07",
+                "keywords": [
+                    "vnq"
+                ]
+            }
+        ]
+    },
+    "VOO": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "VOO"
+                ],
+                "timestamp": "2020-03-07T00:16:12.000Z",
+                "title": "The Reasons Behind The Coronavirus Crash",
+                "url": "https://finance.yahoo.com/news/reasons-behind-coronavirus-crash-001612583.html",
+                "source": "finance yahoo",
+                "summary": "The coronavirus has caused widespread panic in the markets with all the major indexes are over 13% off their highs",
+                "image": "https://s.yimg.com/uu/api/res/1.2/drn1GBInRw.glAb1c3P78A--~B/aD01OTg7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/57ec460cb6b81f1335dcfb164b86740c",
+                "keywords": [
+                    "voo"
+                ]
+            },
+            {
+                "symbols": [
+                    "VOO"
+                ],
+                "timestamp": "2020-01-17T14:45:02.000Z",
+                "title": "U.S. Equity ETF (VOO) Hits New 52-Week High",
+                "url": "https://finance.yahoo.com/news/u-equity-etf-voo-hits-144502517.html",
+                "source": "finance yahoo",
+                "summary": "This U.S. equity ETF hits a new 52-week high. Are more gains in store for this ETF?",
+                "image": "https://s.yimg.com/uu/api/res/1.2/fvxN4xj0NlDpeyYQfhzeDQ--~B/aD02MDI7dz05MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/zacks.com/a41b81fe729c761f3f94f42ff348f70c",
+                "keywords": [
+                    "voo"
+                ]
+            },
+            {
+                "symbols": [
+                    "VOO"
+                ],
+                "timestamp": "2019-11-11T20:47:08.000Z",
+                "title": "Are 2020 Earnings Forecasts Too High?",
+                "url": "https://finance.yahoo.com/news/2020-earnings-forecasts-too-high-204708465.html",
+                "source": "finance yahoo",
+                "summary": "Are 2020 Earnings Forecasts Too High?",
+                "image": "https://s.yimg.com/uu/api/res/1.2/n8VNo1bLtx32sfczRY..tQ--~B/aD03NTQ7dz0xMDAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en-us/zacks.com/d7dcbe11345e3f8e5e71e6827fe3c4c9",
+                "keywords": [
+                    "voo"
+                ]
+            },
+            {
+                "symbols": [
+                    "VOO"
+                ],
+                "timestamp": "2019-10-16T17:47:00.000Z",
+                "title": "What is asset allocation?",
+                "url": "https://www.marketwatch.com/story/in-investing-its-better-to-think-big-picture-2019-09-20?siteid=yhoof2&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Experts from institutional investors to those who work with individual households to achieve financial goals say that most investors should decide on the broad outlines of the assets they want to be invested in, and go no more detailed than that, an approach known as \u2018asset allocation.\u2019",
+                "image": "https://s.yimg.com/uu/api/res/1.2/CCKN9LDBYVmr4nMWAU7tlg--~B/aD0zOTg7dz01Njk7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/marketwatch.com/a3cdbd640c611019aa5bce0b66ec149e",
+                "keywords": [
+                    "voo"
+                ]
+            },
+            {
+                "symbols": [
+                    "VOO"
+                ],
+                "timestamp": "2019-10-15T18:39:00.000Z",
+                "title": "Go on, cut your fees, BlackRock tells brokers: more ETF business for us",
+                "url": "https://www.marketwatch.com/story/go-on-cut-your-fees-blackrock-tells-brokers-more-etf-business-for-us-2019-10-15?siteid=yhoof2&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "As online brokers slash their fees, more investors are finding their way to exchange-traded funds, and for more reasons, executives of the ETF market share leader told analysts",
+                "image": "https://s.yimg.com/uu/api/res/1.2/mscH_9l92OiZh.xhZkVtqg--~B/aD0zOTg7dz01Njk7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/marketwatch.com/aba1d98654ad93bb2f4c53083725771a",
+                "keywords": [
+                    "voo"
                 ]
             }
         ]
