@@ -75,7 +75,7 @@
         ]
     },
     "BNTX": {
-        "Fetched": "2021-04-19",
+        "Fetched": "2021-04-27",
         "News": [
             {
                 "symbols": [
@@ -468,7 +468,7 @@
         ]
     },
     "MRNA": {
-        "Fetched": "2021-04-26",
+        "Fetched": "2021-04-27",
         "News": [
             {
                 "symbols": [
@@ -618,7 +618,7 @@
         ]
     },
     "VOO": {
-        "Fetched": "2021-04-26",
+        "Fetched": "2021-04-27",
         "News": [
             {
                 "symbols": [
@@ -688,6 +688,321 @@
                 "image": "https://s.yimg.com/uu/api/res/1.2/mscH_9l92OiZh.xhZkVtqg--~B/aD0zOTg7dz01Njk7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/marketwatch.com/aba1d98654ad93bb2f4c53083725771a",
                 "keywords": [
                     "voo"
+                ]
+            }
+        ]
+    },
+    "VNQI": {
+        "Fetched": "2021-04-26",
+        "News": [
+            {
+                "symbols": [
+                    "VNQI"
+                ],
+                "timestamp": "2019-12-30T14:12:19.000Z",
+                "title": "This ETF Shows There's Merit in International Real Estate",
+                "url": "https://finance.yahoo.com/news/etf-shows-theres-merit-international-141219029.html",
+                "source": "finance yahoo",
+                "summary": "With analysts mostly tepid on domestic real estate equities heading into 2020, VNQI, which follows the S&P Global ex-U.S. Property Index, could be a solid idea for investors looking to refresh income-oriented sectors in their portfolios.  Plus, like nearly all Vanguard ETFs, VNQI is one of the least",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vnqi"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQI"
+                ],
+                "timestamp": "2018-09-26T19:00:00.000Z",
+                "title": "Model Retirement-Saver Portfolios for Vanguard Investors",
+                "url": "http://news.morningstar.com/articlenet/article.aspx?id=762440&SR=Yahoo&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Vanguard is easy to recommend as a destination for investors aiming to simplify their financial lives by investing with a single firm.  Morningstar's analyst team gives the firm an A rating for stewardship, owing to its strong corporate culture and ultra-low-cost products.  It also fields the largest number of Morningstar Medalist funds of any fund firm.",
+                "keywords": [
+                    "vnqi"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQI"
+                ],
+                "timestamp": "2018-02-08T22:16:03.000Z",
+                "title": "VNQI Crosses Below Key Moving Average Level",
+                "url": "https://www.nasdaq.com/article/vnqi-crosses-below-key-moving-average-level-cm918835",
+                "source": "NASDAQ.com",
+                "summary": "In trading on Thursday, shares of the Vanguard Global ex-U.S. Real Estate ETF (Symbol: VNQI) crossed below their 200 day moving average of $58.96,.",
+                "image": "https://www.nasdaq.com/images/dreamit.jpg",
+                "keywords": [
+                    "nasdaq news",
+                    "market headlines",
+                    "market news",
+                    "stock market headlines",
+                    "stock market news"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQI"
+                ],
+                "timestamp": "2018-01-03T23:06:29.000Z",
+                "title": "IRBT Crosses Above Key Moving Average Level",
+                "url": "https://www.nasdaq.com/article/irbt-crosses-above-key-moving-average-level-cm899973",
+                "source": "NASDAQ.com",
+                "summary": "In trading on Wednesday, shares of iRobot Corp (Symbol: IRBT) crossed above their 200 day moving average of $82.22, changing hands as high as $83.23.",
+                "image": "https://www.nasdaq.com/images/dreamit.jpg",
+                "keywords": [
+                    "nasdaq news",
+                    "market headlines",
+                    "market news",
+                    "stock market headlines",
+                    "stock market news"
+                ]
+            },
+            {
+                "symbols": [
+                    "VNQI"
+                ],
+                "timestamp": "2017-08-16T12:35:23.000Z",
+                "title": "GV Capital Management Buys Vanguard Value ETF - DNQ, Vanguard Growth ETF - DNQ, iPath Bloomberg ...",
+                "url": "https://www.nasdaq.com/article/gv-capital-management-buys-vanguard-value-etf-dnq-vanguard-growth-etf-dnq-ipath-bloomberg-cm832610",
+                "source": "NASDAQ.com",
+                "summary": "GV Capital ManagementAdded Positions: VTV , VUG , IEFA , VNQI, DJP, VNQ, IWN, IWO, IYR, VEA,Reduced Positions:IWD, IWF, EFA, IVE, VWO, IDV, SCZ,For.",
+                "image": "https://www.nasdaq.com/images/dreamit.jpg",
+                "keywords": [
+                    "nasdaq news",
+                    "market headlines",
+                    "market news",
+                    "stock market headlines",
+                    "stock market news"
+                ]
+            }
+        ]
+    },
+    "width=\"150\"": {
+        "Fetched": "2021-04-26",
+        "News": []
+    },
+    "VGK": {
+        "Fetched": "2021-04-27",
+        "News": [
+            {
+                "symbols": [
+                    "VGK"
+                ],
+                "timestamp": "2019-11-07T18:42:57.000Z",
+                "title": "EU Cuts Growth Forecasts For Eurozone On Global Trade Tensions",
+                "url": "https://finance.yahoo.com/news/eu-cuts-growth-forecasts-eurozone-184257818.html",
+                "source": "finance yahoo",
+                "summary": "The European Commission\u00a0slashed its growth forecast for the eurozone Thursday due to global trade tensions weighing on the region and limiting economic expansion.  \u201cThe fact that growth is no longer expected to rebound meaningfully in the next two years is a major shift compared to previous forecasts",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vgk"
+                ]
+            },
+            {
+                "symbols": [
+                    "VGK"
+                ],
+                "timestamp": "2019-10-28T19:40:38.000Z",
+                "title": "Eurozone Slowdown: Weak October Data Shows Stagnation",
+                "url": "https://finance.yahoo.com/news/eurozone-slowdown-weak-october-data-194038431.html",
+                "source": "finance yahoo",
+                "summary": "Germany released weak economic data last week that showed a fall in employment that is mainly the result of job losses in the manufacturing sector. Brexit jitters also continued to weigh on markets as ...",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vgk"
+                ]
+            },
+            {
+                "symbols": [
+                    "VGK"
+                ],
+                "timestamp": "2019-10-24T16:25:50.000Z",
+                "title": "As Draghi Exits ECB, More Signs Of Struggle In German Economy",
+                "url": "https://finance.yahoo.com/news/draghi-exits-ecb-more-signs-162550374.html",
+                "source": "finance yahoo",
+                "summary": "Italian economist and\u00a0former Goldman Sachs Group Inc (NYSE: GS )\u00a0banker turned European Central Bank President Mario Draghi held his last press conference Thursday as he prepares to leave the position ...",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vgk"
+                ]
+            },
+            {
+                "symbols": [
+                    "VGK"
+                ],
+                "timestamp": "2019-09-12T15:29:42.000Z",
+                "title": "Europe ETF Rises, But Investors Show Brexit Jitters",
+                "url": "https://finance.yahoo.com/news/europe-etf-rises-investors-show-152942223.html",
+                "source": "finance yahoo",
+                "summary": "Amid ongoing political turmoil in the U.K., the Vanguard FTSE Europe ETF (VGK) is up nearly 3% this month, an impressive move against the Brexit backdrop, but data indicate some investors aren't sticking around to see what happens next with largest US-listed Europe ETF.  European markets have been",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vgk"
+                ]
+            },
+            {
+                "symbols": [
+                    "VGK"
+                ],
+                "timestamp": "2019-09-12T12:35:23.000Z",
+                "title": "ECB Restarts Quantitative Easing, Cuts Deposit Rate By 10 Basis Points",
+                "url": "https://finance.yahoo.com/news/ecb-restarts-quantitative-easing-cuts-123523998.html",
+                "source": "finance yahoo",
+                "summary": "The European Central Bank cut the interest rate on deposits by 10 basis points to 0.5% on Thursday and said it will relaunch quantitative easing. The ECB announced that net purchases will be restarted ...",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "vgk"
+                ]
+            }
+        ]
+    },
+    "QQQ": {
+        "Fetched": "2021-04-27",
+        "News": [
+            {
+                "symbols": [
+                    "QQQ"
+                ],
+                "timestamp": "2020-03-23T17:50:17.000Z",
+                "title": "COVID-19: William Blair's Proactive Response",
+                "url": "https://finance.yahoo.com/news/covid-19-william-blairs-proactive-175017156.html",
+                "source": "finance yahoo",
+                "summary": "By Stephanie Braming, global head of investment management Continue reading...",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "qqq"
+                ]
+            },
+            {
+                "symbols": [
+                    "QQQ"
+                ],
+                "timestamp": "2020-03-23T17:49:49.000Z",
+                "title": "William Blair Commentary- COVID-19 Implications: Updated Thinking",
+                "url": "https://finance.yahoo.com/news/william-blair-commentary-covid-19-174949197.html",
+                "source": "finance yahoo",
+                "summary": "By Ken McAtamney, partner and portfolio manager Continue reading...",
+                "image": "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo.png",
+                "keywords": [
+                    "qqq"
+                ]
+            },
+            {
+                "symbols": [
+                    "QQQ"
+                ],
+                "timestamp": "2020-03-21T15:19:59.000Z",
+                "title": "Stock Market Update: Fear, Volatility And George Costanza?",
+                "url": "https://www.investors.com/research/stock-market-update-march-20-2020-fear-volatility-george-costansza/?src=A00220&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "IBD's Stock Market Update give you day-by-day analysis of the Nasdaq during last week's coronavirus stock market crash and what to expect next.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/08XkQGFGlAnRqx_QBi_R0g--~B/aD01NjU7dz0xMDAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/896da6553ccfe130c62c9a4e55d354df",
+                "keywords": [
+                    "qqq"
+                ]
+            },
+            {
+                "symbols": [
+                    "QQQ"
+                ],
+                "timestamp": "2020-02-19T14:50:00.000Z",
+                "title": "Stock market bulls will trample the bears this year, according to the weight of the evidence",
+                "url": "https://www.marketwatch.com/story/stock-market-bulls-will-trample-the-bears-this-year-according-to-the-weight-of-the-evidence-2020-02-19?siteid=yhoof2&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "There are three sides to every (stock market) story: The bull side, the bear side and the truth.  Looking at all stocks traded on the New York Stock Exchange is helpful because this number is not skewed by a few high-flying tech stocks.  The chart below (green lines) highlights the last two times the share of stocks on the NYSE that were at 52-week highs set a two-year record.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/lR0f2l3G8RUug_qlGS9H6A--~B/aD01MDE7dz04OTA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/marketwatch.com/308e8537e40c61e47c72a9f872868931",
+                "keywords": [
+                    "qqq"
+                ]
+            },
+            {
+                "symbols": [
+                    "QQQ"
+                ],
+                "timestamp": "2020-02-11T22:24:27.000Z",
+                "title": "GMO Commentary- Valuation Metrics in Emerging Debt: 4Q 2019",
+                "url": "https://finance.yahoo.com/news/gmo-commentary-valuation-metrics-emerging-222427891.html",
+                "source": "finance yahoo",
+                "summary": "By Carl Ross and Victoria Courmes Continue reading...",
+                "image": "https://s.yimg.com/uu/api/res/1.2/dG6.I4SG2g96kdqQ8tlq3w--~B/aD0yNTY7dz01OTQ7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/us.finance.gurufocus/6ef237e727ca3a09b069c7a527a534c1",
+                "keywords": [
+                    "qqq"
+                ]
+            }
+        ]
+    },
+    "MSFT": {
+        "Fetched": "2021-04-27",
+        "News": [
+            {
+                "symbols": [
+                    "MSFT"
+                ],
+                "timestamp": "2020-03-27T14:22:00.000Z",
+                "title": "Microsoft Shows Rally Potential, Go Long on a Shallow Near-Term Dip",
+                "url": "https://realmoney.thestreet.com/investing/microsoft-shows-rally-potential-go-long-on-a-shallow-near-term-dip-15277411?puc=yahoo&cm_ven=YAHOO&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "In the recent days and weeks, Jim Cramer has been using his research skills to uncover stocks that can be bought in this troubling environment.  One name we know is Microsoft  .  In this daily bar chart of MSFT, below, we can see a number of positive developments.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/XeJh4Esp_j8bXZ3va_aiHw--~B/aD04MjA7dz03MjA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/thestreet.com/78325515ccc61882c562e21aaa73c436",
+                "keywords": [
+                    "msft"
+                ]
+            },
+            {
+                "symbols": [
+                    "MSFT"
+                ],
+                "timestamp": "2020-03-27T13:05:51.000Z",
+                "title": "Dow, S&P Futures Drop Signaling An End To 3-Day Long Recovery Rally",
+                "url": "https://finance.yahoo.com/news/dow-p-futures-drop-signaling-130551283.html",
+                "source": "finance yahoo",
+                "summary": "The United States futures contracts dropped early Friday, signaling an end to a three-day-long market rally.What Happened The drop in futures came as the United States surpassed China and Italy to become the worst-hit novel coronavirus (COVID-19) country. Nearly 86,000 COVID-19 cases were confirmed in",
+                "image": "https://s.yimg.com/uu/api/res/1.2/OJ2xJft8w1QLwhcfbUf0cQ--~B/aD00MDA7dz02MDA7c209MTthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/Benzinga/985fcd4b87e4c30a7d3e635afbcbc462",
+                "keywords": [
+                    "msft"
+                ]
+            },
+            {
+                "symbols": [
+                    "MSFT"
+                ],
+                "timestamp": "2020-02-21T21:10:20.000Z",
+                "title": "U.S. Stocks Hit Hard For Second Straight Session; Dow Jones Leader Closes In On Key Support Level",
+                "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-us-stocks-hit-hard-apple-nears-key-support-level/?src=A00220&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Microsoft and Apple took heat in the Dow Jones today, while more weakness in semiconductor stocks weighed on the Nasdaq composite.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/v..12_v3dVgvaYmldGbM6g--~B/aD02MDA7dz0xMDY1O3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/f987cb629e6832be6c69415b40ff82e0",
+                "keywords": [
+                    "msft"
+                ]
+            },
+            {
+                "symbols": [
+                    "MSFT"
+                ],
+                "timestamp": "2020-02-21T18:56:47.000Z",
+                "title": "IBD Live: Time To Sell Microsoft Stock Or Hold This Long Term Leader?",
+                "url": "https://www.investors.com/research/ibd-live-time-to-sell-microsoft-stock-or-hold-this-long-term-leader/?src=A00220&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "The IBD Live Team discussed stocks to buy and watch during Friday's IBD Live.\u00a0Among stocks on the move, the Team analyzed a 3%\u00a0pullback in Microsoft stock.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/ZBMEyXRa2ae7BuwhXwRBWA--~B/aD01NjM7dz0xMDAwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/a725fe83b723fd44c51f2429fe9b42ee",
+                "keywords": [
+                    "msft"
+                ]
+            },
+            {
+                "symbols": [
+                    "MSFT"
+                ],
+                "timestamp": "2020-02-21T18:05:53.000Z",
+                "title": "Stocks Fall On Coronavirus News, Treasury Bond Yields Plunge; Take More Gains In Microsoft Stock?",
+                "url": "https://www.investors.com/market-trend/stock-market-today/stocks-today-fall-coronavirus-news-treasury-bond-yields-plunge-take-more-gains-microsoft/?src=A00220&yptr=yahoo",
+                "source": "finance yahoo",
+                "summary": "Stocks today showed weakness in Microsoft and other leaders in the all-important software sector. Small caps fell in lock step with large caps.",
+                "image": "https://s.yimg.com/uu/api/res/1.2/kccSPeLBjdkkwTV1g26Wiw--~B/aD01NzI7dz0xMDEyO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/ibd.com/43f0142c7cf6380dbfd728af99ec5b04",
+                "keywords": [
+                    "msft"
                 ]
             }
         ]
