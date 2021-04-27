@@ -4,9 +4,16 @@ import json
 import requests
 import sqlite3  # database
 import os  # file handling
+import glob
 import shutil  # file handling
 import pandas as pd  # data handling
+import numpy as np
 import mplfinance as mpf  # showing candle plots
+import matplotlib
+import matplotlib.pyplot as plt
+import seaborn as sns
+from flask import Flask, request, send_file, render_template
+
 
 # API keys --------------------------------------------------------------------
 import secrets
@@ -23,6 +30,10 @@ conn.execute("PRAGMA foreign_keys = 1")
 
 # Set up cache file for News --------------------------------------------------
 NEWS_CACHE = "cached_news.json"
+
+
+# Change matplotlib to backend mode -------------------------------------------
+matplotlib.use('Agg')
 
 
 # Helper Functions (General) --------------------------------------------------
@@ -86,6 +97,20 @@ def save_cache(cache_dict: dict, filename: str):
 
 
 def check_table_exist(conn, tablename: str):
+    """Check if a table with the same name already exists in the database
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    tablename : str
+        table to be checked if it exists
+
+    Returns
+    -------
+    bool
+        True if it exists
+    """
     cur = conn.cursor()
     statement = f"""
         SELECT count(name)
@@ -100,6 +125,20 @@ def check_table_exist(conn, tablename: str):
 
 
 def load_table_as_pd(conn, tablename: str):
+    """Load a table in the database as a pandas DataFrame
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    tablename : str
+        table to be converted
+
+    Returns
+    -------
+    pd.DataFrame
+        dataframe converted from a table in SQL DB
+    """
     # get table as a pandas dataframe
     statement = f"""
         SELECT *
@@ -147,12 +186,42 @@ def insert_rate(conn, currency, date, rate):
 
 
 def get_rates_for(currency: str, date: str):
+    """Make a API call to get the daily exchange rates against USD
+
+    Parameters
+    ----------
+    currency : str
+        currency to be acquired
+    date : str
+        date to be acquired
+
+    Returns
+    -------
+    dict
+        returned json from the api call
+    """
     baseurl = f"https://openexchangerates.org/api/historical/{date}.json"
     params = {"app_id": OEG_APP_ID, "symbols": currency, "base": "USD"}
     return make_request(baseurl=baseurl, params=params)
 
 
 def get_rates_with_cache(conn, currency: str, date: str):
+    """Get the daily exchange rates against USD with caching to database
+
+    Parameters
+    ----------
+    conn
+        connection to database
+    currency : str
+        currency to be acquired
+    date : str
+        date to be acquired
+
+    Returns
+    -------
+    float
+        exchange rate on that day
+    """
     df = load_table_currency(conn, currency)
     # if not cached
     if not df.Date.isin([date]).any():
@@ -161,19 +230,19 @@ def get_rates_with_cache(conn, currency: str, date: str):
         insert_rate(conn, currency, date, response["rates"][currency])
         # reload database
         df = load_table_currency(conn, currency)
-    return df.query(f'Date == "{date}"')["Rates"]
+    return df.query(f'Date == "{date}"')["Rates"].iloc[-1]
 
 
 # Sample Cases ------------------------
-sample_currencies = ["JPY", "AUD", "CAD"]
-sample_dates = []
-for m in ["01", "04", "07", "10"]:
-    for d in ["01", "05", "10", "15", "20", "25"]:
-        sample_dates.append(f"2020-{m}-{d}")
+# sample_currencies = ["JPY", "AUD", "CAD"]
+# sample_dates = []
+# for m in ["01", "04", "07", "10"]:
+#     for d in ["01", "05", "10", "15", "20", "25"]:
+#         sample_dates.append(f"2020-{m}-{d}")
 
-for currency in sample_currencies:
-    for date in sample_dates:
-        get_rates_with_cache(conn, currency, date)
+# for currency in sample_currencies:
+#     for date in sample_dates:
+#         get_rates_with_cache(conn, currency, date)
 
 
 # Stock Info ------------------------------------------------------------------
@@ -245,9 +314,9 @@ def get_all_ETFs_with_cache(conn):
     df = load_table_as_pd(conn, tablename="ETFs")
     return df
 
-
-etfs = get_all_ETFs_with_cache(conn)
-etfs
+# Sample Code ------------------------------
+# etfs = get_all_ETFs_with_cache(conn)
+# etfs
 
 
 # Companies --------------------------------
@@ -428,16 +497,16 @@ def get_eps_with_cache(conn, symbol: str):
 
 
 # Sample Cases ------------------------
-sample_companies = ["AAPL", "BNTX", "DAL", "MAR", "NVAX", "MRNA"]
-for company in sample_companies:
-    company_record = get_company_info_with_cache(conn, company)
-    eps_record = get_eps_with_cache(conn, company)
+# sample_companies = ["AAPL", "BNTX", "DAL", "MAR", "NVAX", "MRNA"]
+# for company in sample_companies:
+#     company_record = get_company_info_with_cache(conn, company)
+#     eps_record = get_eps_with_cache(conn, company)
 
-# should give error (not in parent table)
-try:
-    get_eps_with_cache(conn, "CVS")
-except sqlite3.IntegrityError:
-    print("EPS: Foreign key constraint is working correctly")
+# # should give error (not in parent table)
+# try:
+#     get_eps_with_cache(conn, "CVS")
+# except sqlite3.IntegrityError:
+#     print("EPS: Foreign key constraint is working correctly")
 
 
 # Time Series -----------------------------------------------------------------
@@ -534,30 +603,26 @@ def get_history_with_cache(conn, symbol: str, year: str):
 
 
 # Sample Cases ------------------------
-sample_symbols = ["AAPL", "BNTX"]
-sample_years = ["2020"]
+# sample_symbols = ["AAPL", "BNTX"]
+# sample_years = ["2020"]
 
-for symbol in sample_symbols:
-    for year in sample_years:
-        df = get_history_with_cache(conn, symbol, year)
-
-# # should give error (not in parent table)
-# try:
-#     get_history_with_cache(conn, "CVS", "2020")
-# except sqlite3.IntegrityError:
-#     print("History: Foreign key constraint is working correctly")
+# for symbol in sample_symbols:
+#     for year in sample_years:
+#         df = get_history_with_cache(conn, symbol, year)
 
 
-# Sample Graphs -----------------------
-def gen_plot_history(conn, symbol: str, year: str):
+# Draw TimeSeries Graphs ------------------------------------------------------
+def gen_plot_history(conn, symbol: str, year: str, timestamp: str):
     df = get_history_with_cache(conn, symbol, year)
     # remove existing plot
-    if os.path.exists("images/history.png"):
-        os.remove("images/history.png")
+    if glob.glob('images/history*.png'):
+        for f in glob.glob("images/history*.png"):
+            os.remove(f)
     # when API call limit reached
     if len(df) == 0:
         # show error message as an image
-        shutil.copy("images/history-error.png", "images/history.png")
+        shutil.copy("error_hist_not_shown.png",
+                    f"images/history{timestamp}.png")
     # when data available
     else:
         # adjust values accounting for split/dividend
@@ -572,16 +637,17 @@ def gen_plot_history(conn, symbol: str, year: str):
                  style="charles",
                  title=f"{symbol}, {year}, Adjusted Daily OHLC Prices",
                  volume=True,
-                 savefig="images/history.png")
+                 savefig=f"images/history{timestamp}.png")
 
 
+# Sample Cases ------------------------
 # if more than 5 new API call made,
 # we show an error message as an image
-sample_symbols = ["MAR", "MRNA", "NVAX"]
-sample_years = ["2019", "2020"]
-for symbol in sample_symbols:
-    for year in sample_years:
-        gen_plot_history(conn, symbol, year)
+# sample_symbols = ["MAR", "MRNA", "NVAX"]
+# sample_years = ["2019", "2020"]
+# for symbol in sample_symbols:
+#     for year in sample_years:
+#         gen_plot_history(conn, symbol, year)
 
 
 # Financial News --------------------------------------------------------------
@@ -616,6 +682,234 @@ def get_news_with_cache(symbol):
 
 
 # Sample Cases ------------------------
-sample_companies = ["AAPL", "BNTX"]
-for company in sample_companies:
-    get_news_with_cache(company)
+# sample_companies = ["AAPL", "BNTX"]
+# for company in sample_companies:
+#     get_news_with_cache(company)
+
+
+# Flask App -------------------------------------------------------------------
+
+# Helper funcs ------------------------
+def clean_dollar_to_float(value):
+    return (value.replace('$', '').replace(',', ''))
+
+
+def clean_date_firstrade(datestr):
+    return datetime.datetime.strptime(datestr, '%m/%d/%Y').strftime('%Y-%m-%d')
+
+
+def clean_firstrade(df):
+    # set column names
+    df.columns = df.iloc[0]
+    # drop unnecessary rows
+    df = df[1:-3]
+    # select columns we need
+    df = df.loc[:, [
+        'Symbol', 'Quantity', 'Date Acquired', 'Date Sold', 'Sales Proceeds',
+        'Cost'
+    ]]
+    # clean gain/loss in string, and convert them to float
+    df['Sales'] = df['Sales Proceeds'].apply(clean_dollar_to_float).astype(
+        'float')
+    df = df.drop(['Sales Proceeds'], axis=1)
+    df['Cost'] = df['Cost'].apply(clean_dollar_to_float).astype('float')
+    # clean datetime format
+    df['Date Acquired'] = df['Date Acquired'].apply(clean_date_firstrade)
+    df['Date Sold'] = df['Date Sold'].apply(clean_date_firstrade)
+    return df
+
+
+def convert_transaction_history(conn, df, broker, currency):
+    # clean data according to brokerage firm
+    if broker == "firstrade":
+        df = clean_firstrade(df)
+
+    # get exchange rates of the selected currency
+    df['Rate Acquired'] = df.apply(lambda x: get_rates_with_cache(
+        conn=conn, currency=currency, date=x['Date Acquired']),
+                                   axis=1)
+    df['Rate Sold'] = df.apply(lambda x: get_rates_with_cache(
+        conn=conn, currency=currency, date=x['Date Sold']),
+                               axis=1)
+    df = df.round({'Rate Acquired': 2, 'Rate Sold': 2})
+
+    # calculate gain/loss in the selected currency
+    df['Converted Cost'] = df['Cost'] * df['Rate Acquired']
+    df['Converted Sales'] = df['Sales'] * df['Rate Sold']
+    df = df.round({'Converted Cost': 2, 'Converted Sales': 2})
+
+    # arrange columns
+    df = df[[
+        'Symbol', 'Quantity', 'Date Acquired', 'Cost', 'Rate Acquired',
+        'Converted Cost', 'Date Sold', 'Sales', 'Rate Sold', 'Converted Sales'
+    ]]
+
+    # calculate gain/loss
+    df['Gain&Loss'] = df['Converted Sales'] - df['Converted Cost']
+    df = df.round({'Gain&Loss': 2})
+
+    return df.sort_values(["Symbol", "Date Sold"])
+
+
+def gen_plot_cumulative_gain(df, currency, filename):
+    # remove existing plot
+    if glob.glob('images/cumulative*.png'):
+        for f in glob.glob("images/cumulative*.png"):
+            os.remove(f)
+
+    # find year
+    tax_year = df.iat[0, 2][:4]
+
+    # summing transactions by date
+    cum = df.groupby(by=["Date Sold"]).sum().sort_index()[['Gain&Loss']]
+
+    # fill in empty dates
+    cum.index = pd.DatetimeIndex(cum.index)
+    all_dates = pd.date_range(start=f"{tax_year}-01-01",
+                              end=f"{tax_year}-12-31")
+
+    # calculate cumulative sum for all dates
+    cum = cum.reindex(all_dates).fillna(0.0).rename_axis('Date Sold').cumsum()
+
+    # generate cumulative plot
+    cum_plot = sns.lineplot(data=cum, x="Date Sold", y="Gain&Loss")
+    cum_plot.set_title(f"Cumulative Gain and Loss in {tax_year} in {currency}")
+    cum_plot.set_xlabel('')
+    cum_plot.get_figure().savefig(f"images/{filename}")
+    plt.close()
+
+
+def output_csv(df):
+    # remove existing plot
+    if os.path.exists("files/converted.csv"):
+        os.remove("files/converted.csv")
+    # save csv
+    df.to_csv('files/converted.csv')
+
+
+def clean_eps(eps):
+    # create dates column
+    dates = eps[['EPS1Date', 'EPS2Date', 'EPS3Date', 'EPS4Date']]
+    dates = dates.transpose().reset_index(drop=True)
+
+    # create reported eps column
+    reported = eps[[
+        'EPS1Reported', 'EPS2Reported', 'EPS3Reported', 'EPS4Reported'
+    ]]
+    reported = reported.transpose().reset_index(drop=True)
+    reported['Type'] = 'Reported'
+    # join horizontally with dates
+    reported = pd.concat([reported, dates], axis=1, ignore_index=True)
+    reported = reported.rename(columns={0: "EPS", 1: "Type", 2: "Date"})
+
+    # create expected eps column
+    expected = eps[[
+        'EPS1Expected', 'EPS2Expected', 'EPS3Expected', 'EPS4Reported'
+    ]]
+    expected = expected.transpose().reset_index(drop=True)
+    expected['Type'] = 'Expected'
+    # join horizontally with dates
+    expected = pd.concat([expected, dates], axis=1, ignore_index=True)
+    expected = expected.rename(columns={0: "EPS", 1: "Type", 2: "Date"})
+
+    # join vertically
+    return pd.concat([reported,
+                      expected]).sort_values(['Type',
+                                              'Date']).reset_index(drop=True)
+
+
+def gen_plot_eps(eps, symbol, timestamp):
+    if glob.glob('images/eps*.png'):
+        for f in glob.glob("images/eps*.png"):
+            os.remove(f)
+    eps_plot = sns.barplot(x="Date", y="EPS", hue="Type", data=eps)
+    eps_plot.set_title(
+        f"Consensus Earnings Estimates vs Reported for {symbol}")
+    eps_plot.get_figure().savefig(f"images/eps{timestamp}")
+    plt.close()
+
+
+# App ------------------------
+app = Flask(__name__, static_url_path="", static_folder="images")
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
+@app.route('/converted', methods=['POST'])
+def converted():
+    conn = sqlite3.connect(DB)
+    # get constants
+    df = pd.read_csv(request.files.get('file'))
+    broker = request.form['brokerage']
+    currency = request.form['currency']
+    # convert
+    df = convert_transaction_history(conn=conn,
+                                     df=df,
+                                     broker=broker,
+                                     currency=currency)
+    # generate plot in '/images'
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+    filename = f"cumulative{timestamp}.png"  # prevent browser cache
+    gen_plot_cumulative_gain(df=df, currency=currency, filename=filename)
+    # generate converted csv in '/files'
+    output_csv(df)
+    # prepare HTML table
+    df_dict = df.to_dict('records')
+    return render_template('converted.html',
+                           df_dict=df_dict,
+                           currency=currency,
+                           filename=filename)
+
+
+@app.route('/analysis/<symbol>')
+def symbol(symbol):
+    conn = sqlite3.connect(DB)
+    # get timestamp for plots (prevent browser cache)
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d-%H:%M:%S")
+    # show plots of the latest tax year
+    year = str(datetime.date.today().year - 1)
+    # check if the symbol is an ETF
+    etfs = get_all_ETFs_with_cache(conn)
+    WHETHER_ETF = etfs.Symbol.isin([symbol]).any()
+    # get info to display
+    news_dict = get_news_with_cache(symbol)
+    # draw time series plot
+    gen_plot_history(conn=conn, symbol=symbol, year=year, timestamp=timestamp)
+    history_filename = f"history{timestamp}.png"
+    # for an ETF, we only display basic info
+    if WHETHER_ETF:
+        # get basic info
+        info_dict = etfs[etfs['Symbol'] == symbol].to_dict('records')
+        # ignore EPS
+        eps = "Not Applicable"
+        eps_filename = "Not Applicable"
+    # for a company, we display more detailed info
+    elif not WHETHER_ETF:
+        # get basic info
+        info_dict = get_company_info_with_cache(conn, symbol).to_dict('records')
+        # draw EPS plot
+        eps = get_eps_with_cache(conn, symbol)
+        eps = clean_eps(eps)
+        gen_plot_eps(eps=eps, symbol=symbol, timestamp=timestamp)
+        eps_filename = f"eps{timestamp}.png"
+    return render_template('symbol.html',
+                           symbol=symbol,
+                           year=year,
+                           whether_etf=WHETHER_ETF,
+                           info_dict=info_dict[0],
+                           news_dict=news_dict,
+                           history_filename=history_filename,
+                           eps_filename=eps_filename)
+
+
+@app.route('/download')
+def download_file():
+    path = "files/converted.csv"
+    return send_file(path, as_attachment=True)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
